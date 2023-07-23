@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+     <menu>
+        <add id="SolutionPioneers_Extension::solutionpioneers_extension_menu"
+            title="Solution Pioneers"
+            module="SolutionPioneers_Warranty"
+            sortOrder="50"
+            resource="SolutionPioneers_Extension::solutionpioneers_extension_menu"
+            translate="true"
+        />
+        <add id="SolutionPioneers_Warranty::solutionpioneers_warranty_menu"
+            title="Warranty"
+            module="SolutionPioneers_Warranty"
+            sortOrder="100"
+            resource="SolutionPioneers_Warranty::solutionpioneers_warranty_menu"
+            parent="SolutionPioneers_Extension::solutionpioneers_extension_menu"
+            translate="true"
+        />
+        <add id="SolutionPioneers_Warranty::solutionpioneers_warranty_manage_warranty"
+            title="Manage Warranty"
+            module="SolutionPioneers_Warranty"
+            sortOrder="10"
+            resource="SolutionPioneers_Warranty::solutionpioneers_warranty_manage_warranty"
+            parent="SolutionPioneers_Warranty::solutionpioneers_warranty_menu"
+            translate="true"
+            action="sp_warranty/warranty/index"
+        />
+    </menu>
+</config>

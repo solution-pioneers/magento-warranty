@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+        <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="sp_warranty_warranty_listing_data_source" xsi:type="string">SolutionPioneers\Warranty\Model\ResourceModel\Warranty\Grid\Collection</item>
+                <item name="g2_warranty_listing_data_source" xsi:type="string">SolutionPioneers\Warranty\Model\ResourceModel\Warranty\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="WarrantyImageUploader" type="SolutionPioneers\Warranty\Model\ImageUploader">
+        <arguments>
+            <argument name="baseTmpPath" xsi:type="const">SolutionPioneers\Warranty\Model\ImageUploader::IMAGE_TMP_PATH</argument>
+            <argument name="basePath" xsi:type="const">SolutionPioneers\Warranty\Model\ImageUploader::IMAGE_PATH</argument>
+            <argument name="allowedExtensions" xsi:type="array">
+                <item name="jpg" xsi:type="string">jpg</item>
+                <item name="jpeg" xsi:type="string">jpeg</item>
+                <item name="gif" xsi:type="string">gif</item>
+                <item name="png" xsi:type="string">png</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <type name="SolutionPioneers\Warranty\Controller\Adminhtml\Warranty\Image\Upload">
+        <arguments>
+            <argument name="uploader" xsi:type="object">WarrantyImageUploader</argument>
+        </arguments>
+    </type> 
+</config>
