@@ -92,17 +92,17 @@
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="dataType" xsi:type="string">string</item>
-                    <item name="source" xsi:type="string">poductlabel</item>
+                    <item name="source" xsi:type="string">warranty</item>
                     <item name="label" xsi:type="string" translate="true">Image</item>
                     <item name="visible" xsi:type="boolean">true</item>
                     <item name="formElement" xsi:type="string">fileUploader</item>
                     <item name="elementTmpl" xsi:type="string">ui/form/element/uploader/uploader</item>
                     <item name="previewTmpl" xsi:type="string">SolutionPioneers_Warranty/image-preview</item>
-                    <item name="baseTmpPath" xsi:type="string">solutionpioneers_warranty/tmp</item>
+                    <item name="baseTmpPath" xsi:type="string">tmp/solutionpioneers/warranty</item>
                     <item name="required" xsi:type="boolean">true</item>
                     <item name="sortOrder" xsi:type="number">60</item>
                     <item name="uploaderConfig" xsi:type="array">
-                        <item name="url" xsi:type="url" path="solutionpioneers_warranty/warranty_image/upload"/>
+                        <item name="url" xsi:type="url" path="sp_warranty/warranty_image/upload"/>
                     </item>
                 </item>
             </argument>

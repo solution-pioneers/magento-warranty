@@ -81,7 +81,7 @@ class WarrantyDataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
 
                  /* Prepare Image */
                 $map = [
-                    'image' => 'getImagePath',
+                    'image' => 'getImage',
                 ];
 
                 foreach ($map as $key => $method) {
@@ -96,7 +96,7 @@ class WarrantyDataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
                     }
                 }
 
-                $this->loadedData[$item->getIdProductLabel()] = $data;
+                $this->loadedData[$item->getId()] = $data;
             }
         }
         
@@ -116,10 +116,10 @@ class WarrantyDataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
      * 
      * @return string
      */
-    protected function getImageUrl(string $imagePath) 
+    protected function getImageUrl(string $image) 
     {
         return $this->storeManager->getStore()
-            ->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . $imagePath;
+            ->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . 'solutionpioneers/warranty/' . $image;
     }
 
     /**
@@ -127,9 +127,9 @@ class WarrantyDataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
      * 
      * @return int
      */
-    protected function getImageSize(string $imagePath) 
+    protected function getImageSize(string $image) 
     {
-        $path = $this->directoryList->getPath('media') . '/'.$imagePath;
+        $path = $this->directoryList->getPath('media') . '/solutionpioneers/warranty/' . $image;
         
         return filesize($path);
     }

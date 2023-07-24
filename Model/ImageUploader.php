@@ -19,22 +19,22 @@ class ImageUploader
     /**
      * @var string
      */
-    const IMAGE_TMP_PATH = 'solutionpioneers_warranty/tmp';
+    const IMAGE_TMP_PATH = 'tmp/solutionpioneers/warranty';
 
     /**
      * @var string
      */
-    const IMAGE_PATH = 'solutionpioneers_warranty';
+    const IMAGE_PATH = 'solutionpioneers/warranty';
 
     /**
      * @var string
      */
-    const FILE_TMP_PATH = 'solutionpioneers_warranty/tmp/images/file';
+    const FILE_TMP_PATH = 'tmp/solutionpioneers/warranty/images/file';
 
     /**
      * @var string
      */
-    const FILE_PATH = 'solutionpioneers_warranty/images/file';
+    const FILE_PATH = 'solutionpioneers/warranty/images/file';
 
     /**
      * Core file storage database

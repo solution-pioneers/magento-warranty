@@ -13,7 +13,7 @@ use SolutionPioneers\Warranty\Model\ImageUploader;
  */
 class Save extends Action
 {
-    protected const IMAGE_PATH = 'solutionpioneers_warranty/';
+    protected const IMAGE_PATH = 'solutionpioneers/warranty/';
 
     /**
      * @var \Magento\Framework\View\Result\PageFactory
@@ -26,7 +26,7 @@ class Save extends Action
     protected $resultLayoutFactory;
 
     /**
-     * @var \G2\ProductLabel\Model\ImageUploader
+     * @var \SolutionPioneers\Warranty\Model\ImageUploader
      */
     protected $imageUploader;
 
@@ -36,7 +36,7 @@ class Save extends Action
      * @param Context $context
      * @param \Magento\Framework\View\Result\LayoutFactory $resultLayoutFactory
      * @param \Magento\Framework\View\Result\PageFactory $resultPageFactory
-     * @param \G2\ProductLabel\Model\ImageUploader $imageUploader
+     * @param \SolutionPioneers\Warranty\Model\ImageUploader $imageUploader
      */
     public function __construct(
         \Magento\Backend\App\Action\Context $context,

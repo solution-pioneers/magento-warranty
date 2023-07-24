@@ -41,6 +41,13 @@
                             <argument name="header_css_class" xsi:type="string">col-id</argument>
                         </arguments>
                     </block>
+                    <block class="Magento\Backend\Block\Widget\Grid\Column" as="image">
+                        <arguments>
+                            <argument name="header" xsi:type="string" translate="true">Image</argument>
+                            <argument name="index" xsi:type="string">image</argument>
+                            <argument name="renderer" xsi:type="string">SolutionPioneers\Warranty\Block\Adminhtml\Grid\Renderer\Image</argument>
+                        </arguments>
+                    </block>
                 </block>
             </block>
         </referenceBlock>
