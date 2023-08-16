@@ -80,8 +80,7 @@ class Edit extends Action
 
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
-
-        //$resultPage->setActiveMenu('G2_ProductLabel::productlabel');
+        
         $resultPage->getConfig()->getTitle()->prepend(__('New Warranty'));
         if ($warrantyId) {
             $resultPage->getConfig()->getTitle()->prepend(__('Edit Warranty'));

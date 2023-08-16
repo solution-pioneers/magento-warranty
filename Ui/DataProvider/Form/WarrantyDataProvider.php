@@ -9,7 +9,7 @@ use Magento\Framework\Filesystem\DirectoryList;
 /**
  * Class WarrantyDataProvider
  * 
- * @package SolutionPioners\ProductLabel\Ui\DataProvider\Form
+ * @package SolutionPioners\Warranty\Ui\DataProvider\Form
  */
 class WarrantyDataProvider extends \Magento\Ui\DataProvider\AbstractDataProvider
 {

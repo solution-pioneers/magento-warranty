@@ -1,0 +1,17 @@
+<?php /** @var \SolutionPioneers\Warranty\Block\Warranty $block */ ?>
+<?php $warrantyImage = $block->getWarrantyImage() ?>
+<?php $warrantyDescription = $block->getWarrantyDescription() ?>
+<?php if ($warrantyImage || $warrantyDescription) :?>
+    <div class='product-warranty' >
+        <h2><?php echo __('Warranty') ?></h2>
+        <div class='product-warranty-container'>
+            <?php if($warrantyImage):?>
+                <img class='product-warranty-image' src='<?php echo $warrantyImage ?>'/>
+            <?php endif;?>
+
+            <?php if($warrantyDescription):?>
+                <span class='product-warranty-description'><?php echo $warrantyDescription ?></span>
+            <?php endif;?>
+        </div>
+    </div>
+<?php endif;?>

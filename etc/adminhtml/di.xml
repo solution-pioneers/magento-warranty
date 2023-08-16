@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-        <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
-        <arguments>
-            <argument name="collections" xsi:type="array">
-                <item name="sp_warranty_warranty_listing_data_source" xsi:type="string">SolutionPioneers\Warranty\Model\ResourceModel\Warranty\Grid\Collection</item>
-                <item name="g2_warranty_listing_data_source" xsi:type="string">SolutionPioneers\Warranty\Model\ResourceModel\Warranty\Grid\Collection</item>
-            </argument>
-        </arguments>
-    </type>
     <virtualType name="WarrantyImageUploader" type="SolutionPioneers\Warranty\Model\ImageUploader">
         <arguments>
             <argument name="baseTmpPath" xsi:type="const">SolutionPioneers\Warranty\Model\ImageUploader::IMAGE_TMP_PATH</argument>
