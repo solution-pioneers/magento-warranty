@@ -71,7 +71,7 @@ class Data extends AbstractHelper
     /**
      * @return string
      */
-    public function geProductWarrantyDescription($product): string
+    public function getProductWarrantyDescription($product): string
     {
         $warranty = $this->getProductWarranty($product);
 
