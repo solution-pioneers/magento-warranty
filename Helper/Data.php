@@ -87,7 +87,7 @@ class Data extends AbstractHelper
      * 
      * @return \SolutionPioneers\Warranty\Model\Warranty|null
      */
-    protected function getProductWarranty($product): ?Warranty
+    public function getProductWarranty($product): ?Warranty
     {
         if (!$product) {
             return null;
